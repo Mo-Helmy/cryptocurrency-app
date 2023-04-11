@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import HTMLReactParser from 'html-react-parser';
 import { useParams } from 'react-router-dom';
 import millify from 'millify';
@@ -38,8 +38,6 @@ const CryptoDetails = () => {
     coinHistory
   );
   const cryptoDetails = data?.data?.coin;
-
-  // useEffect(() => {}, [timeperiod]);
 
   if (isFetching) return <Loader />;
 
